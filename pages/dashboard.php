@@ -1,0 +1,42 @@
+<?php
+session_start();
+if($_SESSION['role'] != 'admin'){
+    session_destroy();
+    header('Location:./../index.php');
+}
+?>
+
+<?php
+
+$ds = DIRECTORY_SEPARATOR;
+$base_dir = realpath(dirname(__FILE__) . $ds . "..") . $ds;
+require_once("{$base_dir}pages{$ds}core{$ds}header.php");
+
+
+?>
+
+
+<main id="main" class="main">
+
+    <div class="pagetitle">
+        <h1>Dashboard</h1>
+        <nav>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="dashboard.php">Home</a></li>
+                <li class="breadcrumb-item active">Dashboard</li>
+            </ol>
+        </nav>
+    </div><!-- End Page Title -->
+
+    <section class="section dashboard">
+        <div class="row">
+          <!-- Start ngoding disini -->
+        <h1>Kamu Admin <?php echo $_SESSION['name'];?></h1>
+          <!-- End ngoding -->
+        </div>
+    </section>
+</main><!-- End #main -->
+
+<?php
+require_once("{$base_dir}pages{$ds}core{$ds}footer.php");
+?>
