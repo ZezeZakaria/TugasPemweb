@@ -1,0 +1,16 @@
+1. framework dalam pengembangan aplikasi itu seperti panduan atau kerangka kerja yang menyediakan aturan, alat bantu, dan struktur dasar untuk mempermudah proses pembuatan aplikasi
+
+2.	(1) Sistem Penjualan Obat Apotek Segar
+	(2) - Andrian Mustofany Akhyar : Programer (Ngoding, Membuat Website, UI/UX Desain)
+	    - Zeze Zakaria	       : Dokumentasi (Angket, Laporan, UML)
+	    - Sindi Putri Utami	       : Database (Basis Data, Query)
+	(3) Permasalahan yang didapat adalah :
+		1. update stok secara manual di sistem setiap malam
+		2. Belum terintergrasi dengan pelaporan Kemenkes
+		3. Sistem akuntansi masih menggunakan FiFO inginnya untuk stok obat Menggunakan Fefo dan untuk sistem akuntansi menggunakan averaging
+	    Solusi yang ditawarkan
+		1. update stok otomatis Secara real-time
+	    Fitur yang diinginkan dalam sistem
+		1. Dapat melakukan switching (rekomendasi obat yang sama berdasarkan kandungan)
+		2. Terintergrasi langsung dengan beberapa telemedicine
+		3. Didalam sistem resep, terdapat kontra indikasi atau peringatan alergi
